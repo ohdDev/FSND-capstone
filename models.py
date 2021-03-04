@@ -68,10 +68,10 @@ class Actors(db.Model):
   age = Column(db.Integer)
   gender = Column(db.String)
 
-  def __init__(self, name, age, gender):
-    self.name = name
-    self.age = age
-    self.gender = gender
+  # def __init__(self, name, age, gender):
+  #   self.name = name
+  #   self.age = age
+  #   self.gender = gender
 
   def format(self):
     return {
@@ -79,6 +79,10 @@ class Actors(db.Model):
       'name': self.name,
       'age': self.age,
       'gender': self.gender}
+  
+
+  def __repr__(self):
+        return json.dumps(self.format())
 
   
   def insert(self):
