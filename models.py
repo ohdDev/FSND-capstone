@@ -7,8 +7,8 @@ import json
 
 
 
-database_name = "castingag"
-database_path = 'postgresql://ohoud@localhost:5432/castingag'
+database_name = "castdb"
+database_path = 'postgresql://ohoud@localhost:5432/castdb'
 db = SQLAlchemy()
 
 
@@ -31,8 +31,8 @@ class Movies(db.Model):
   __tablename__ = 'movies'
 
   id = Column(db.Integer, primary_key=True)
-  name = Column(db.String)
-  release_date = Column(db.Date)
+  name = Column(db.String(250))
+  release_date = Column(db.String(250))
 
   def __init__(self, name, release_date):
     self.name = name
@@ -64,9 +64,9 @@ class Actors(db.Model):
   __tablename__ = 'actors'
 
   id = Column(db.Integer, primary_key=True)
-  name = Column(db.String)
+  name = Column(db.String(250))
   age = Column(db.Integer)
-  gender = Column(db.String)
+  gender = Column(db.String(250))
 
   # def __init__(self, name, age, gender):
   #   self.name = name
