@@ -8,7 +8,7 @@ import json
 
 
 database_name = "castdb"
-database_path = 'postgres://yyxfnorfhspczj:a82883f0464dd3557a4014069984c713997b000284b0a18b56ae002062c94fef@ec2-35-171-57-132.compute-1.amazonaws.com:5432/de9vr1v9m0hs2a'
+database_path = 'postgres://jpqtvpjtrzhsir:4f24f0ca7d0131ba3ba5d4908469b8b5b2b5496b237f5867a169362365824c09@ec2-35-171-57-132.compute-1.amazonaws.com:5432/dhd0uim8bmdo'
 db = SQLAlchemy()
 
 
