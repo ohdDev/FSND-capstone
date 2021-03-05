@@ -19,9 +19,9 @@ def setup_db(app, database_path=database_path):
     db.init_app(app)
    
 
-def init_db():
-    db.drop_all()
-    db.create_all()
+# def init_db():
+#     db.drop_all()
+#     db.create_all()
 
 '''
 Movies
@@ -68,10 +68,10 @@ class Actors(db.Model):
   age = Column(db.Integer)
   gender = Column(db.String(250))
 
-  # def __init__(self, name, age, gender):
-  #   self.name = name
-  #   self.age = age
-  #   self.gender = gender
+  def __init__(self, name, age, gender):
+    self.name = name
+    self.age = age
+    self.gender = gender
 
   def format(self):
     return {
