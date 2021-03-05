@@ -2,6 +2,8 @@
 
 ### Description
 this project is about casting agency models a company that is responsible for creating movies and managing and assigning actors to those movies.
+**URL where the application is hosted:**
+- https://castingapp.herokuapp.com/
 
 ### Install dependencies
 
